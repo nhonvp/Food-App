@@ -38,7 +38,7 @@ const App = () => {
           screenOptions={{
             headerShown: false,
           }}
-          initialRouteName={'FoodDetail'}>
+          initialRouteName={'MyCard'}>
           <Stack.Screen name="Home" component={CustomDrawer} />
           <Stack.Screen name="OnBoarding" component={OnBoarding} />
 

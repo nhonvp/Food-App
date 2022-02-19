@@ -1,8 +1,9 @@
 import React from 'react';
 import {
     View,
-    Text
+    Text,Button
 } from 'react-native';
+
 
 const Map = ({ navigation }) => {
 
@@ -27,6 +28,7 @@ const Map = ({ navigation }) => {
             }}
         >
             <Text>Map</Text>
+            <Button title="GO Back" onPress={() => navigation.goBack()}/>
         </View>
     )
 }

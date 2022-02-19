@@ -6,7 +6,7 @@ import {icons, constants, dummyData, images, theme} from '../constants';
 import {Header as HeaderRNE} from 'react-native-elements';
 import CartQuantityButton from './CartQuantityButton';
 
-export default function Header({navigation,title,icon,images,hiddenright,isHome,isFoodDetail}) {
+export default function Header({navigation,title,icon,images,hiddenright,isHome,isFoodDetail,isCard,onpress}) {
   return (
     <View
       style={{
@@ -62,6 +62,16 @@ export default function Header({navigation,title,icon,images,hiddenright,isHome,
         />
       }
       
+      {
+        isCard && 
+        <View
+         style={{
+           marginRight : 50
+         }}
+        >
+        
+        </View>
+      }
     </View>
   );
 }
